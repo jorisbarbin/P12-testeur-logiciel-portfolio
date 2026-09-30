@@ -2,19 +2,37 @@
     {
         "image": "image1-booki.webp",
         "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image2-grimoire.webp",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "text": "Intégration d’une interface web responsive à partir de maquettes en HTML et CSS.",
         "link": "#"
     },
     {
         "image": "image3-Kaza.webp",
         "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "text": "Développement d’une application web avec React et création de composants réutilisables.",
+        "link": "https://github.com/jorisbarbin/projet-8-kasa-react.git"
+    },
+    {
+        "image": "menu-maker.webp",
+        "title": "Menu Maker",
+        "text": "Planification d’un projet web : analyse des besoins, choix techniques, user stories, priorisation et organisation avec un Kanban.",
+        "link": "#"
+    },
+    {
+        "image": "eco-bliss-bath.webp",
+        "title": "Eco Bliss Bath",
+        "text": "Automatisation de tests avec Cypress : tests fonctionnels E2E, tests API, analyse des résultats et documentation des anomalies.",
+        "link": "https://github.com/jorisbarbin/-P10-Eco-Bliss-Bath.git"
+    },
+    {
+        "image": "payforge.webp",
+        "title": "PayForge",
+        "text": "Conception d’une stratégie de test pour TOMSEN : revue des exigences, conception et exécution des tests, suivi des anomalies et retests.",
+        "link": "#"
+    },
+    {
+        "image": "portfolio.webp",
+        "title": "Portfolio",
+        "text": "Débogage et optimisation d’un site existant : performances, accessibilité, SEO, audits Lighthouse et WAVE, puis versionnement avec Git.",
         "link": "#"
     }
 ]

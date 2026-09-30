@@ -17,7 +17,7 @@
     {
         "image": "html-css.jpg",
         "title": "HTML - CSS",
-        "text": "Compréhension de la structure d’une interface web, du responsive design et des principes d’accessibilité"
+        "text": "Compréhension de la structure d’une interface web, de la conception responsive et des principes d’accessibilité"
     },
     {
         "image": "js.jpg",
@@ -27,6 +27,6 @@
     {
         "image": "react.jpg",
         "title": "React & environnement web",
-        "text": "Compréhension d’applications React, des composants, des échanges front-end / API et de l’architecture d’une application web"
+        "text": "Compréhension d’applications React, des composants, des échanges front-end et les API et de l’architecture d’une application web"
     }
 ]

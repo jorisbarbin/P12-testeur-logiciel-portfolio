@@ -102,8 +102,31 @@
 }
 
 /* portfolio */
+/* portfolio */
+/* portfolio */
 #portfolio p {
     text-align: center;
+}
+
+#portfolio .card {
+    height: 100%;
+    min-height: 360px;
+}
+
+#portfolio .card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+#portfolio .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio .card-body .btn {
+    margin-top: auto;
+    align-self: center;
 }
 
 /* contact */
