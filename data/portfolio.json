@@ -26,7 +26,7 @@
     {
         "image": "payforge.webp",
         "title": "PayForge",
-        "text": "Conception d’une stratégie de test pour TOMSEN : revue des exigences, conception et exécution des tests, suivi des anomalies et retests.",
+        "text": "Conception d’une stratégie de test pour TOMSEN : revue des exigences, définition de la stratégie et conception d’un cahier de recette.",
         "link": "https://github.com/jorisbarbin/P11-payforge.git"
     },
     {
