@@ -3,7 +3,7 @@
         "image": "image1-booki.webp",
         "title": "Booki",
         "text": "Intégration d’une interface web responsive à partir de maquettes en HTML et CSS.",
-        "link": "#"
+        "link": "https://github.com/jorisbarbin/Projet-03_Booki_Barbin_Joris.git"
     },
     {
         "image": "image3-Kaza.webp",
@@ -15,7 +15,7 @@
         "image": "menu-maker.webp",
         "title": "Menu Maker",
         "text": "Planification d’un projet web : analyse des besoins, choix techniques, user stories, priorisation et organisation avec un Kanban.",
-        "link": "#"
+        "link": "https://github.com/jorisbarbin/P9-menu-maker-qwenta.git"
     },
     {
         "image": "eco-bliss-bath.webp",
@@ -27,12 +27,12 @@
         "image": "payforge.webp",
         "title": "PayForge",
         "text": "Conception d’une stratégie de test pour TOMSEN : revue des exigences, conception et exécution des tests, suivi des anomalies et retests.",
-        "link": "#"
+        "link": "https://github.com/jorisbarbin/P11-payforge.git"
     },
     {
         "image": "portfolio.webp",
         "title": "Portfolio",
         "text": "Débogage et optimisation d’un site existant : performances, accessibilité, SEO, audits Lighthouse et WAVE, puis versionnement avec Git.",
-        "link": "#"
+        "link": "https://github.com/jorisbarbin/P12-testeur-logiciel-portfolio.git"
     }
 ]
