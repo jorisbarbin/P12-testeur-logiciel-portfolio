@@ -5,6 +5,10 @@ body {
     color: #24312c;
 }
 
+.container {
+    max-width: 1140px;
+}
+
 main section {
     scroll-margin-top: 80px;
 }
@@ -54,11 +58,11 @@ main section {
 #portfolio {
     background-color: #f7f9f8;
 }
-#contact {
-    padding-bottom: 4rem;
-}
 
-/* display background dark color on navbar scroll */
+
+/******* NAVBAR *******/
+
+.navbar,
 .navbarScroll.navbarDark {
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -68,44 +72,55 @@ main section {
     color: #ffffff;
 }
 
-.navbar {
-    background-color: rgba(0, 0, 0, 0.75);
-}
 
-/* hero background image */
+/******* HERO *******/
+
 .bgimage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     padding: 4rem 0;
+
     background-color: #0b0f14;
     background-image: url("images/image1.webp");
     background-size: cover;
     background-position: center 45%;
     background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-
 }
 
 .bgimage::before {
     content: "";
     position: absolute;
     inset: 0;
-    background:
-        linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.30),
-            rgba(0, 0, 0, 0.55)
-        );
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.30),
+        rgba(0, 0, 0, 0.55)
+    );
 }
-/* text css above hero image*/
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+
+    padding: 2rem;
+
+    text-align: center;
+    color: #ffffff;
+}
+
 .hero_title {
+    margin-bottom: 0.75rem;
+
     font-size: clamp(2.4rem, 5vw, 4rem);
     font-weight: 700;
-    margin-bottom: 0.75rem;
 }
 
 .hero_desc {
@@ -113,38 +128,37 @@ main section {
     font-weight: 300;
     opacity: 0.95;
 }
-.hero-text {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    padding: 2rem;
-}
 
-/* about */
+
+/******* ABOUT *******/
+
 #about .row {
     align-items: center;
 }
 
 #about .container > .row {
+    padding: 2.5rem;
+
     background-color: #ffffff;
     border-radius: 20px;
-    padding: 2.5rem;
+
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
 }
 
 .imageAboutPage {
+    display: block;
+
     width: 100%;
     max-width: 250px;
-    display: block;
     margin: 0 auto;
+
     border-radius: 50%;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 #about ul {
-    list-style: none;
     padding-left: 0;
+    list-style: none;
 }
 
 #about li {
@@ -158,13 +172,12 @@ main section {
 .about-card {
     height: 100%;
     padding: 1.4rem;
-    border-radius: 20px;
 
     background: rgba(255, 255, 255, 0.72);
     border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
 
-    box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -176,32 +189,38 @@ main section {
 
 .about-card:hover {
     transform: translateY(-4px);
-    box-shadow:
-        0 14px 35px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
 }
 
-/* skills */
+
+/******* SKILLS *******/
+
 .skillsText.card {
     height: 100%;
-    min-height: 0;
+
+    padding: clamp(0.7rem, 1.5vw, 1rem);
+
     border: none;
     border-radius: 18px;
-    padding: clamp(0.7rem, 1.5vw, 1rem);
+
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .skillsText.card:hover {
     transform: translateY(-4px);
-    box-shadow:
-        0 14px 35px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
 }
 
 .skillsText img {
     width: 100%;
     height: clamp(70px, 10vw, 110px);
-    object-fit: contain;
     margin-bottom: clamp(0.4rem, 1vw, 0.75rem);
+
+    object-fit: contain;
 }
 
 .skillsText .card-title {
@@ -210,60 +229,67 @@ main section {
 }
 
 .skillsText p {
-    font-size: clamp(0.95rem, 1vw, 0.75rem);
+    font-size: clamp(0.75rem, 1vw, 0.95rem);
     line-height: 1.45;
 }
 
-/* portfolio */
+
+/******* PORTFOLIO *******/
+
 #portfolio {
     padding-bottom: 5rem;
 }
 
 #portfolio .card {
     height: 100%;
-    min-height: 0;
+
     border: none;
     border-radius: 18px;
+
     overflow: hidden;
+
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.07);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 #portfolio .card:hover {
     transform: translateY(-4px);
-    box-shadow:
-        0 14px 35px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
 }
 
 #portfolio .card-img-top {
+    display: block;
+
     width: 100%;
-    aspect-ratio: 16 / 9;
     height: auto;
+    aspect-ratio: 16 / 9;
+
     object-fit: cover;
     object-position: center;
-    display: block;
 }
 
 #portfolio .card-body {
     display: flex;
+    flex: 1;
     flex-direction: column;
+
     padding: clamp(0.8rem, 1.5vw, 1.5rem);
 }
 
 #portfolio .card-title {
-    font-size: clamp(1.25rem, 1.6vw, 1rem);
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
 }
 
 #portfolio .card-text {
-    font-size: clamp(0.95rem, 1vw, 0.75rem);
+    font-size: clamp(0.75rem, 1vw, 0.95rem);
     line-height: 1.45;
 }
 
-#portfolio .card-body .btn {
+#portfolio .card-body .text-center {
     margin-top: auto;
-    align-self: center;
-    font-size: clamp(0.75rem, 0.9vw, 0.9rem);
-    padding: clamp(0.4rem, 0.7vw, 0.55rem) clamp(0.8rem, 1.2vw, 1.25rem);
 }
 
 .portfolio-btn {
@@ -272,14 +298,13 @@ main section {
     justify-content: center;
     gap: 0.5rem;
 
-    margin-top: auto;
     padding: 0.65rem 1.15rem;
+
+    color: #198754;
+    background-color: rgba(25, 135, 84, 0.08);
 
     border: 1px solid rgba(25, 135, 84, 0.35);
     border-radius: 999px;
-
-    background-color: rgba(25, 135, 84, 0.08);
-    color: #198754;
 
     font-size: 0.9rem;
     font-weight: 600;
@@ -293,8 +318,9 @@ main section {
 }
 
 .portfolio-btn:hover {
-    background-color: #198754;
     color: #ffffff;
+    background-color: #198754;
+
     transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(25, 135, 84, 0.18);
 }
@@ -304,15 +330,19 @@ main section {
     outline-offset: 3px;
 }
 
-/* contact */
+
+/******* CONTACT *******/
+
 #contact {
     padding: 3rem 0;
 }
 
 .contactContent {
+    padding: 2rem;
+
     background-color: #ffffff;
     border-radius: 20px;
-    padding: 2rem;
+
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
@@ -324,14 +354,15 @@ main section {
 }
 
 .contactColumn i {
+    margin-bottom: 0.5rem;
+
     color: #198754;
     font-size: 2.2rem;
-    margin-bottom: 0.5rem;
 }
 
 .contactColumn h3 {
-    font-size: 1rem;
     margin-bottom: 0;
+    font-size: 1rem;
 }
 
 .contactColumn a {
@@ -343,11 +374,8 @@ main section {
     text-decoration: underline;
 }
 
-.container {
-    max-width: 1140px;
-}
 
-/* footer */
+/******* RESPONSIVE *******/
 
 @media (max-width: 768px) {
 
@@ -363,9 +391,5 @@ main section {
     .skillsText p,
     #portfolio .card-text {
         font-size: 0.95rem;
-    }
-
-    #portfolio .card-img-top {
-        height: 180px;
     }
 }
