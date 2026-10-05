@@ -25,6 +25,48 @@ function handleNavbarCollapse() {
     });
 }
 
+function updateActiveNav() {
+    const sections = document.querySelectorAll("main section[id]");
+    const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+    function setActiveLink(id) {
+        navLinks.forEach((link) => {
+            link.classList.toggle(
+                "active",
+                link.getAttribute("href") === `#${id}`
+            );
+        });
+    }
+
+    function handleScroll() {
+        const scrollPosition = window.scrollY + 140;
+
+        let currentSection = "home";
+
+        sections.forEach((section) => {
+            if (scrollPosition >= section.offsetTop) {
+                currentSection = section.id;
+            }
+        });
+
+        const atBottom =
+            window.innerHeight + window.scrollY >=
+            document.documentElement.scrollHeight - 10;
+
+        if (atBottom) {
+            currentSection = "contact";
+        }
+
+        setActiveLink(currentSection);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+}
+
+updateActiveNav();
+
 // Function to dynamically create HTML elements from the JSON file
 function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
@@ -81,6 +123,12 @@ function createPortfolioFromJSON() {
                     <div class="card-body">
                         <h3 class="card-title">${item.title}</h3>
                         <p class="card-text">${item.text}</p>
+                            <div class="portfolio-footer">
+                            <div class="portfolio-tags">
+                                ${(item.tags || [])
+                                    .map((tag) => `<span class="portfolio-tag">${tag}</span>`)
+                                    .join("")}
+                            </div>
                         <div class="text-center">
                             <a href="${item.link}"
                             class="portfolio-btn"

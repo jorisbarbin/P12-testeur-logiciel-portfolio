@@ -72,6 +72,30 @@ main section {
     color: #ffffff;
 }
 
+.navbar .nav-link {
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0.2rem;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #198754;
+    border-radius: 999px;
+
+    transform: translateX(-50%);
+    transition: width 0.2s ease;
+}
+
+.navbar .nav-link.active::after {
+    width: 60%;
+}
+
 
 /******* HERO *******/
 
@@ -127,6 +151,38 @@ main section {
     font-size: clamp(1.2rem, 2vw, 1.7rem);
     font-weight: 300;
     opacity: 0.95;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 999px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ffffff;
+    color: #198754;
+    transform: translateY(-2px);
+}
+
+.hero-btn:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 3px;
 }
 
 
@@ -281,6 +337,7 @@ main section {
 
 #portfolio .card-title {
     font-size: clamp(1rem, 1.6vw, 1.25rem);
+    text-align: center;
 }
 
 #portfolio .card-text {
@@ -288,9 +345,6 @@ main section {
     line-height: 1.45;
 }
 
-#portfolio .card-body .text-center {
-    margin-top: auto;
-}
 
 .portfolio-btn {
     display: inline-flex;
@@ -328,6 +382,42 @@ main section {
 .portfolio-btn:focus-visible {
     outline: 3px solid rgba(25, 135, 84, 0.35);
     outline-offset: 3px;
+}
+
+.portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+
+    margin: 0.75rem 0 1rem;
+}
+
+.portfolio-tag {
+    padding: 0.3rem 0.65rem;
+
+    background-color: rgba(25, 135, 84, 0.08);
+    color: #198754;
+
+    border: 1px solid rgba(25, 135, 84, 0.15);
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.portfolio-footer {
+    margin-top: auto;
+}
+
+.portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+
+    margin-bottom: 1rem;
 }
 
 

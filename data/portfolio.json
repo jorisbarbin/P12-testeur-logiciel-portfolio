@@ -1,38 +1,44 @@
 [
-    {
-        "image": "image1-booki.webp",
-        "title": "Booki",
-        "text": "Intégration d’une interface web responsive à partir de maquettes en HTML et CSS.",
-        "link": "https://github.com/jorisbarbin/Projet-03_Booki_Barbin_Joris.git"
-    },
-    {
-        "image": "image3-Kaza.webp",
-        "title": "Kasa",
-        "text": "Développement d’une application web avec React et création de composants réutilisables.",
-        "link": "https://github.com/jorisbarbin/projet-8-kasa-react.git"
-    },
-    {
-        "image": "menu-maker.webp",
-        "title": "Menu Maker",
-        "text": "Planification d’un projet web : analyse des besoins, choix techniques, user stories, priorisation et organisation avec un Kanban.",
-        "link": "https://github.com/jorisbarbin/P9-menu-maker-qwenta.git"
-    },
-    {
-        "image": "eco-bliss-bath.webp",
-        "title": "Eco Bliss Bath",
-        "text": "Automatisation de tests avec Cypress : tests fonctionnels E2E, tests API, analyse des résultats et documentation des anomalies.",
-        "link": "https://github.com/jorisbarbin/-P10-Eco-Bliss-Bath.git"
-    },
-    {
-        "image": "payforge.webp",
-        "title": "PayForge",
-        "text": "Conception d’une stratégie de test pour TOMSEN : revue des exigences, définition de la stratégie et conception d’un cahier de recette.",
-        "link": "https://github.com/jorisbarbin/P11-payforge.git"
-    },
-    {
-        "image": "portfolio.webp",
-        "title": "Portfolio",
-        "text": "Débogage et optimisation d’un site existant : performances, accessibilité, SEO, audits Lighthouse et WAVE, puis versionnement avec Git.",
-        "link": "https://github.com/jorisbarbin/P12-testeur-logiciel-portfolio.git"
-    }
+  {
+    "image": "image1-booki.webp",
+    "title": "Booki",
+    "text": "Intégration d’une interface web responsive à partir de maquettes en HTML et CSS.",
+    "tags": ["HTML", "CSS", "Responsive"],
+    "link": "https://github.com/jorisbarbin/Projet-03_Booki_Barbin_Joris.git"
+  },
+  {
+    "image": "image3-Kaza.webp",
+    "title": "Kasa",
+    "text": "Développement d’une application web avec React et création de composants réutilisables.",
+    "tags": ["React", "JavaScript", "Composants"],
+    "link": "https://github.com/jorisbarbin/projet-8-kasa-react.git"
+  },
+  {
+    "image": "menu-maker.webp",
+    "title": "Menu Maker",
+    "text": "Planification d’un projet web : analyse des besoins, choix techniques, user stories, priorisation et organisation avec un Kanban.",
+    "tags": ["Kanban", "User Stories", "Architecture", "Agile"],
+    "link": "https://github.com/jorisbarbin/P9-menu-maker-qwenta.git"
+  },
+  {
+    "image": "eco-bliss-bath.webp",
+    "title": "Eco Bliss Bath",
+    "text": "Automatisation de tests avec Cypress : tests fonctionnels E2E, tests API, analyse des résultats et documentation des anomalies.",
+    "tags": ["Cypress", "E2E", "API", "QA"],
+    "link": "https://github.com/jorisbarbin/-P10-Eco-Bliss-Bath.git"
+  },
+  {
+    "image": "payforge.webp",
+    "title": "PayForge",
+    "text": "Conception d’une stratégie de test pour TOMSEN : revue des exigences, définition de la stratégie et conception d’un cahier de recette.",
+    "tags": ["Stratégie de test", "Exigences", "CDR", "QA"],
+    "link": "https://github.com/jorisbarbin/P11-payforge.git"
+  },
+  {
+    "image": "portfolio.webp",
+    "title": "Portfolio",
+    "text": "Débogage et optimisation d’un site existant : performances, accessibilité, SEO, audits Lighthouse et WAVE, puis versionnement avec Git.",
+    "tags": ["Lighthouse", "WAVE", "SEO", "Git"],
+    "link": "https://github.com/jorisbarbin/P12-testeur-logiciel-portfolio.git"
+  }
 ]
