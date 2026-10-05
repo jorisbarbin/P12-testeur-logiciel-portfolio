@@ -396,10 +396,10 @@ main section {
 .portfolio-tag {
     padding: 0.3rem 0.65rem;
 
-    background-color: rgba(25, 135, 84, 0.08);
-    color: #198754;
+    background-color: #e6f4ec;
+    color: #12663d;
 
-    border: 1px solid rgba(25, 135, 84, 0.15);
+    border: 1px solid #8bc9a8;
     border-radius: 999px;
 
     font-size: 0.75rem;
