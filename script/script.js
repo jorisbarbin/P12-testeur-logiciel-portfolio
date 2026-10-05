@@ -82,7 +82,11 @@ function createPortfolioFromJSON() {
                         <h3 class="card-title">${item.title}</h3>
                         <p class="card-text">${item.text}</p>
                         <div class="text-center">
-                            <a href="${item.link}" class="btn btn-success" target="_blank" rel="noopener noreferrer">
+                            <a href="${item.link}"
+                            class="portfolio-btn"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
                                 Voir sur GitHub
                             </a>
                         </div>
